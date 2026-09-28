@@ -161,7 +161,7 @@ FOOTER = f"""
       </div>
       <div class="footer-bottom">
         <p>&copy; <span id="year">2026</span> Milepost &mdash; operated by Civil Digital. All rights reserved.</p>
-        <p>Track with certainty. Link with trust.</p>
+        <p>Your team, mile by mile.</p>
       </div>
     </div>
   </footer>
@@ -586,7 +586,7 @@ home = (
             <a class="btn btn--primary btn--lg" href="{SIGNUP}">Start free trial</a>
             <a class="btn btn--secondary btn--lg" href="/features/">See what&rsquo;s included</a>
           </div>
-          <p class="hero__tagline">Track with certainty. Link with trust.</p>
+          <p class="hero__tagline">Your team, mile by mile.</p>
         </div>
         <div class="hero__art">
           {shot("map", "Hub &middot; Live map", eager=True)}
