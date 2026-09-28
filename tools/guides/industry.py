@@ -54,7 +54,7 @@ dict(
 
       <h2>Is it worth it?</h2>
       <p>For most small mobile teams, if tracking saves each person even a few minutes of driving or admin a day, it
-      pays for itself. The simplest way to find out is a trial with a couple of real team members. TrackLink offers
+      pays for itself. The simplest way to find out is a trial with a couple of real team members. Milepost offers
       {TRIAL_DAYS} days free.</p>
 """.replace("{TRIAL_DAYS}", str(TRIAL_DAYS)),
     faqs=[
@@ -96,7 +96,7 @@ dict(
 
       <h2>Integration with accounting and invoicing software</h2>
       <p>Some tracking services integrate directly with accounting packages; many offer a CSV export that you can
-      import into a spreadsheet, payroll or invoicing tool. TrackLink exports route history as CSV (time, position,
+      import into a spreadsheet, payroll or invoicing tool. Milepost exports route history as CSV (time, position,
       speed, device and the person it belongs to), which works with most accounting and spreadsheet tools without a
       direct integration.</p>
 
@@ -109,7 +109,7 @@ dict(
         ("Can GPS tracking replace timesheets?",
          "It can do most of the work, but many businesses keep a simple timesheet for breaks and exceptions. GPS gives the objective arrival and departure times."),
         ("Can I export GPS data to my accounting software?",
-         "With a CSV export you can bring the data into spreadsheets and most accounting or payroll tools. TrackLink exports route history as CSV."),
+         "With a CSV export you can bring the data into spreadsheets and most accounting or payroll tools. Milepost exports route history as CSV."),
     ],
     related=["gps-tracking-business-efficiency", "gps-tracking-electricians-tradespeople", "gps-tracking-vs-employee-monitoring"],
 ),
@@ -149,8 +149,8 @@ dict(
         <li>Be ready to show staff their own data if they ask.</li>
       </ul>
 
-      <h2>How TrackLink works for contractors</h2>
-      <p>Create each site as a zone and TrackLink records arrivals and departures and can alert your Hub users. Your
+      <h2>How Milepost works for contractors</h2>
+      <p>Create each site as a zone and Milepost records arrivals and departures and can alert your Hub users. Your
       team switch tracking on at the start of the day from their Android phones and off at the end, and a notification
       shows while it runs.</p>
 """,
@@ -197,8 +197,8 @@ dict(
       updates, and that it stops at the end of the day, goes a long way. See
       <a href="/guides/employee-concerns-gps-tracking/">managing employee concerns</a>.</p>
 
-      <h2>TrackLink for trade firms</h2>
-      <p>TrackLink starts at {gbp(BASE)} a month for one office user and three engineers, runs on Android phones,
+      <h2>Milepost for trade firms</h2>
+      <p>Milepost starts at {gbp(BASE)} a month for one office user and three engineers, runs on Android phones,
       updates {UPDATE_INTERVALS}, and includes route history, groups (for example &ldquo;Electrical&rdquo; and
       &ldquo;Plumbing&rdquo;) and zone arrival alerts.</p>
 """,
@@ -336,7 +336,7 @@ dict(
       tracking when they start, limit it to working hours and remove their access when the season ends. See
       <a href="/guides/is-gps-tracking-legal-uk-business/">is GPS tracking legal</a>.</p>
 
-      <h2>How TrackLink handles seasonal teams</h2>
+      <h2>How Milepost handles seasonal teams</h2>
       <p>You can add and remove seats month to month, invite many people at once by email, organise them into groups,
       and remove people (and their data) at the end of the season.</p>
 """,
@@ -379,8 +379,8 @@ dict(
       satellite, so someone at home can follow you where phones can&rsquo;t reach; they usually need a subscription. See
       <a href="/guides/gps-tracking-without-signal/">GPS without signal</a> for how offline GPS works.</p>
 
-      <h2>Where TrackLink fits (and doesn&rsquo;t)</h2>
-      <p>TrackLink is built for businesses tracking working teams, not personal hiking. It can suit <strong>outdoor
+      <h2>Where Milepost fits (and doesn&rsquo;t)</h2>
+      <p>Milepost is built for businesses tracking working teams, not personal hiking. It can suit <strong>outdoor
       businesses</strong> &mdash; guides, outdoor activity instructors, estate and countryside staff &mdash; that want
       to see where their team is during working hours. It is not a safety or emergency device and depends on mobile
       signal to share positions live.</p>

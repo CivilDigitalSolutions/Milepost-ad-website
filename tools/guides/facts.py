@@ -1,4 +1,4 @@
-"""Single source of TrackLink facts quoted in the guides.
+"""Single source of Milepost facts quoted in the guides.
 
 Every price, limit and product claim a guide makes comes from here, so a price change is one
 edit — not a hunt through 27 articles for a stale figure. Keep in step with the product:

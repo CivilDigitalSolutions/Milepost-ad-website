@@ -1,14 +1,14 @@
 /* ==========================================================================
-   TrackLink — Design System
+   Milepost — Design System
    A product of Civil Digital. Tokens are taken VERBATIM from the real
-   TrackLink product — app/src/.../ui/theme/Color.kt (Compose) and
+   Milepost product — app/src/.../ui/theme/Color.kt (Compose) and
    web/src/theme.css (React Hub dashboard, confirmed byte-identical to the
    CSS served live at https://tracklink-a9030.web.app). Do not "improve" or
    approximate these — if a token doesn't exist in the product, don't invent
    a new brand colour, reuse the closest existing token instead.
 
    Structure deliberately mirrors the real app/web Hub's own design
-   language, NOT the Dispatch/BoatLog navy-hero template: TrackLink is
+   language, NOT the Dispatch/BoatLog navy-hero template: Milepost is
    light-first with no dark scheme (Theme.kt: "there is intentionally no
    dark scheme; the brand is the light blue/white look with orange CTAs").
    The ONE dark accent anywhere in the real product is the footer band
@@ -78,7 +78,7 @@
   --sp-5: 1.5rem;  --sp-6: 2rem;   --sp-7: 3rem;    --sp-8: 4rem;
   --sp-9: 6rem;
 
-  /* Shape — matches the app's actual shape scale (Theme.kt TrackLinkShapes:
+  /* Shape — matches the app's actual shape scale (Theme.kt MilepostShapes:
      small=12dp, medium/large=24dp; web .btn is 16px, web .card is 24px).
      This is deliberately NOT the fully-pill buttons Dispatch/BoatLog use. */
   --radius:      24px;   /* cards */
@@ -194,7 +194,7 @@ h4 { font-size: var(--fs-500); }
 }
 .brand { display: flex; align-items: center; gap: var(--sp-3); }
 .brand:hover { text-decoration: none; }
-.brand__wordmark { height: 26px; width: auto; }
+.brand__wordmark { height: 29px; width: auto; } /* Milepost's p descends: 117/106 of 26 px */
 
 .nav__toggle {
   display: none; background: none; border: 0; color: var(--navy);

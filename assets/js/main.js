@@ -1,4 +1,4 @@
-/* TrackLink — site behaviour.
+/* Milepost — site behaviour.
    Vanilla JS, no dependencies. Progressive enhancement only:
    the site works fully without it. */
 

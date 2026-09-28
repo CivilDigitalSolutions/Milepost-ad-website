@@ -39,8 +39,8 @@ dict(
       <p>What makes the biggest practical difference is <strong>what the software does with the positions</strong>:
       discarding poor-accuracy fixes, smoothing jitter and not drawing a parked phone as a scribble.</p>
 
-      <h2>How accurate is TrackLink?</h2>
-      <p>TrackLink uses each phone&rsquo;s high-accuracy location mode, discards any position the phone reports as worse
+      <h2>How accurate is Milepost?</h2>
+      <p>Milepost uses each phone&rsquo;s high-accuracy location mode, discards any position the phone reports as worse
       than 25 metres, and smooths the rest so routes follow the roads rather than zig-zagging. When a phone is parked,
       its history stops recording jitter and holds a single settled position.</p>
 
@@ -69,7 +69,7 @@ dict(
     answer=f"""It varies from <strong>every second</strong> to <strong>every few hours</strong>, depending on the
       device and its settings. For business tracking, updates every <strong>30 to 60 seconds</strong> give a live map
       and good route history without draining batteries; every few seconds is needed only for genuinely live following.
-      TrackLink updates {UPDATE_INTERVALS}.""",
+      Milepost updates {UPDATE_INTERVALS}.""",
     body="""
       <h2>What &ldquo;real-time&rdquo; really means</h2>
       <p>Most trackers are <em>near</em> real-time: the device takes a position, sends it, and the map updates. The
@@ -92,7 +92,7 @@ dict(
       <p>Each update wakes the GPS and the radio, which costs battery. Updating every second can use many times the
       battery of updating every 30 seconds. See <a href="/guides/gps-tracker-battery-life/">battery life</a>.</p>
 
-      <h2>How TrackLink handles updates</h2>
+      <h2>How Milepost handles updates</h2>
       <ul>
         <li>Choose every 30 seconds, 60 seconds or 5 minutes; 60 seconds is the default.</li>
         <li>A 5-second high-frequency mode and a 1-second Live Track mode are explicit opt-ins, with battery guidance shown first.</li>
@@ -188,8 +188,8 @@ dict(
       arrive in a burst when coverage returns. On a live map, the person appears to stop, then jumps along the route
       when they reconnect.</p>
 
-      <h2>How TrackLink handles dead spots</h2>
-      <p>TrackLink holds positions on the phone while it is offline and uploads them once it reconnects, so route
+      <h2>How Milepost handles dead spots</h2>
+      <p>Milepost holds positions on the phone while it is offline and uploads them once it reconnects, so route
       history fills in &mdash; even after a long spell without signal. The live map shows how long ago each device was
       last heard from, so a gap is obvious rather than misleading.</p>
 
@@ -244,11 +244,11 @@ dict(
       interval. Away from a vehicle, choose a moderate interval (60 seconds or 5 minutes) and replace ageing phone
       batteries.</p>
 
-      <h2>How TrackLink manages battery use</h2>
+      <h2>How Milepost manages battery use</h2>
       <ul>
         <li>60-second updates by default, with 30-second and 5-minute options.</li>
         <li>The 5-second and 1-second modes are opt-ins with battery guidance shown first.</li>
-        <li>When a phone is parked, TrackLink stops filling its history and just keeps a light check-in going.</li>
+        <li>When a phone is parked, Milepost stops filling its history and just keeps a light check-in going.</li>
         <li>Tracking only runs when switched on, so it isn&rsquo;t using battery outside working time.</li>
       </ul>
 """,

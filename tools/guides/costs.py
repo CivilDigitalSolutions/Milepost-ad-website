@@ -15,7 +15,7 @@ dict(
     answer=f"""For a UK small business, GPS tracking usually costs somewhere between <strong>a few pounds and
       around £20 per vehicle or person, per month</strong>. Hardware trackers add the price of the unit and often
       installation; phone-based apps skip both. The cheapest option that works well is usually a phone app if your
-      team already carries smartphones &mdash; TrackLink, for example, is {gbp(BASE)} a month for one manager and
+      team already carries smartphones &mdash; Milepost, for example, is {gbp(BASE)} a month for one manager and
       three tracked people.""",
     body=f"""
       <h2>What you are actually paying for</h2>
@@ -68,8 +68,8 @@ dict(
       to install. Where a phone app is <em>not</em> the answer is tracking things rather than people &mdash; see
       <a href="/guides/track-company-assets-gps/">tracking company assets</a>.</p>
 
-      <h2>What TrackLink costs</h2>
-      <p>TrackLink is priced per person, not per feature. Every plan includes the live map, route history, groups,
+      <h2>What Milepost costs</h2>
+      <p>Milepost is priced per person, not per feature. Every plan includes the live map, route history, groups,
       zone alerts and CSV export.</p>
       <ul>
         <li><strong>Base plan: {gbp(BASE)} a month</strong> (or {gbp(BASE_ANNUAL)} a year) &mdash; 1 Hub seat for a
@@ -97,7 +97,7 @@ dict(
         ("Is GPS tracking worth it for a small business?",
          "For most teams that drive for work, yes — the savings from fewer wasted journeys, quicker answers to customers and less time spent chasing people usually outweigh a few pounds a month per person. See <a href=\"/guides/gps-tracking-business-efficiency/\">how GPS tracking improves efficiency</a>."),
         ("Do I have to sign a long contract?",
-         "Not always. Many hardwired systems use 24 to 36 month contracts, while app-based services such as TrackLink are monthly or annual and can be cancelled."),
+         "Not always. Many hardwired systems use 24 to 36 month contracts, while app-based services such as Milepost are monthly or annual and can be cancelled."),
         ("Does a GPS tracking app use a lot of mobile data?",
          f"No — a location update is tiny. At the standard intervals ({UPDATE_INTERVALS}) the data use is small compared with normal phone use."),
     ],
@@ -141,7 +141,7 @@ dict(
 
       <h2>The lowest-cost way to get live tracking</h2>
       <p>For tracking people, the lowest-cost live option is usually an app on the phone they already carry: the
-      phone&rsquo;s own data plan does the sending, so you don&rsquo;t pay for a second SIM per person. TrackLink works
+      phone&rsquo;s own data plan does the sending, so you don&rsquo;t pay for a second SIM per person. Milepost works
       this way &mdash; see <a href="/guides/gps-tracking-cost-small-business/">what GPS tracking costs</a> for a
       full comparison, including the hidden costs of hardware.</p>
 """,
@@ -202,7 +202,7 @@ dict(
       supplier&rsquo;s servers and you view them in a browser or app from anywhere. <strong>Local</strong> systems keep
       data on your own computer or server &mdash; more control, but you run the server, the backups and the security
       yourself. For a small business, cloud is almost always the practical choice; the questions to ask are where the
-      data is stored and who can see it. TrackLink, for example, stores its data in London and keeps every
+      data is stored and who can see it. Milepost, for example, stores its data in London and keeps every
       organisation&rsquo;s data isolated at the database level.</p>
 
       <h2>DIY vs professional GPS tracking implementation</h2>
@@ -224,8 +224,8 @@ dict(
          "For live tracking, how reliably it updates — a cheap tracker that goes quiet for twenty minutes is worse than no tracker. Then route history, then alerts."),
         ("Can one system track both people and vehicles?",
          "Some can, but it is usually cleaner to track people with a phone app and equipment with dedicated hardware trackers, each doing what it is good at."),
-        ("Is TrackLink a hardware tracker?",
-         f"No. TrackLink is an Android app plus a web dashboard: it tracks the person carrying the phone, updating {UPDATE_INTERVALS}."),
+        ("Is Milepost a hardware tracker?",
+         f"No. Milepost is an Android app plus a web dashboard: it tracks the person carrying the phone, updating {UPDATE_INTERVALS}."),
     ],
     related=["best-real-time-gps-tracking-app", "gps-tracking-cost-small-business", "track-company-assets-gps"],
 ),
@@ -267,7 +267,7 @@ dict(
       installer, nothing to charge &mdash; means fewer things to fail. A phone-based service that everyone can set up
       in minutes is usually more dependable in practice than a sophisticated system nobody maintains.</p>
 
-      <h2>How TrackLink approaches reliability</h2>
+      <h2>How Milepost approaches reliability</h2>
       <ul>
         <li>Tracking runs as an Android foreground service with a visible notification, so it keeps going with the
           screen off.</li>
@@ -277,7 +277,7 @@ dict(
         <li>You choose how live it is: {UPDATE_INTERVALS}.</li>
         <li>The Hub map shows online, idle and offline at a glance.</li>
       </ul>
-      <p>The honest limitation: TrackLink is Android-only on the tracking side. The dashboard works in any browser.</p>
+      <p>The honest limitation: Milepost is Android-only on the tracking side. The dashboard works in any browser.</p>
 """,
     faqs=[
         ("Why does my tracking app stop working when the phone is locked?",

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Emit the TrackLink marketing pages from one shared chrome template.
+"""Emit the Milepost marketing pages from one shared chrome template.
 
     python3 tools/build-pages.py
 
@@ -64,7 +64,7 @@ def head(title, desc, path, extra_schema, og_title=None, og_desc=None):
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="TrackLink">
+  <meta property="og:site_name" content="Milepost">
   <meta property="og:locale" content="en_GB">
   <meta property="og:title" content="{og_title}">
   <meta property="og:description" content="{og_desc}">
@@ -73,12 +73,12 @@ def head(title, desc, path, extra_schema, og_title=None, og_desc=None):
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="TrackLink — live GPS tracking for teams">
+  <meta property="og:image:alt" content="Milepost — live GPS tracking for teams">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{og_title}">
   <meta name="twitter:description" content="{og_desc}">
   <meta name="twitter:image" content="{OG}">
-  <meta name="twitter:image:alt" content="TrackLink — live GPS tracking for teams">
+  <meta name="twitter:image:alt" content="Milepost — live GPS tracking for teams">
 
   <link rel="icon" href="/images/favicon.png" type="image/png" sizes="48x48">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" sizes="180x180">
@@ -106,8 +106,8 @@ def header(path):
     return f"""
   <header class="site-header">
     <nav class="container nav" aria-label="Primary">
-      <a class="brand" href="/" aria-label="TrackLink home">
-        <img class="brand__wordmark" src="/assets/brand/tracklink-wordmark.svg" alt="TrackLink" width="128" height="26">
+      <a class="brand" href="/" aria-label="Milepost home">
+        <img class="brand__wordmark" src="/assets/brand/milepost-wordmark.svg" alt="Milepost" width="115" height="29">
       </a>
       <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -131,10 +131,10 @@ FOOTER = f"""
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a class="brand" href="/" aria-label="TrackLink home">
-            <img class="brand__wordmark" src="/assets/brand/tracklink-wordmark.svg" alt="TrackLink" width="128" height="26">
+          <a class="brand" href="/" aria-label="Milepost home">
+            <img class="brand__wordmark" src="/assets/brand/milepost-wordmark.svg" alt="Milepost" width="115" height="29">
           </a>
-          <p>Live GPS tracking, a real-time team map and route history for small businesses. TrackLink is operated by Civil Digital.</p>
+          <p>Live GPS tracking, a real-time team map and route history for small businesses. Milepost is operated by Civil Digital.</p>
         </div>
         <nav aria-label="Product">
           <h2>Product</h2>
@@ -160,7 +160,7 @@ FOOTER = f"""
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; <span id="year">2026</span> TrackLink &mdash; operated by Civil Digital. All rights reserved.</p>
+        <p>&copy; <span id="year">2026</span> Milepost &mdash; operated by Civil Digital. All rights reserved.</p>
         <p>Track with certainty. Link with trust.</p>
       </div>
     </div>
@@ -207,12 +207,12 @@ def page_head(crumb, h1, sub):
 
 
 IMAGES = {
-    "map": ("hub-live-map", 2240, 1400, "TrackLink Hub &mdash; live team map",
-            "The TrackLink Hub live map: five tracked devices on one map with a device list showing speed, group, battery and last-seen time."),
-    "route": ("hub-route-history", 2240, 1400, "TrackLink Hub &mdash; route history",
-              "The TrackLink Hub route history view: a full day's route with numbered stops, dwell times, distance, moving time and speed."),
-    "phone": ("track-app", 680, 1330, "The TrackLink Track app",
-              "The TrackLink Track app on a phone, showing tracking switched on, the update-interval selector and the ongoing notification."),
+    "map": ("hub-live-map", 2240, 1400, "Milepost Hub &mdash; live team map",
+            "The Milepost Hub live map: five tracked devices on one map with a device list showing speed, group, battery and last-seen time."),
+    "route": ("hub-route-history", 2240, 1400, "Milepost Hub &mdash; route history",
+              "The Milepost Hub route history view: a full day's route with numbered stops, dwell times, distance, moving time and speed."),
+    "phone": ("track-app", 680, 1330, "The Milepost Track app",
+              "The Milepost Track app on a phone, showing tracking switched on, the update-interval selector and the ongoing notification."),
 }
 
 
@@ -263,9 +263,9 @@ ORG = {
     "url": "https://civildigital.co.uk/",
     "logo": {
         "@type": "ImageObject", "@id": BASE + "/#logo",
-        "url": BASE + "/assets/brand/tracklink-icon.png",
+        "url": BASE + "/assets/brand/milepost-icon.png",
         "width": 512, "height": 512,
-        "caption": "TrackLink, a product of Civil Digital",
+        "caption": "Milepost, a product of Civil Digital",
     },
     "image": {"@id": BASE + "/#logo"},
     "email": "info@civildigital.co.uk",
@@ -282,7 +282,7 @@ ORG = {
 SITE = {
     "@type": "WebSite",
     "@id": BASE + "/#website",
-    "name": "TrackLink",
+    "name": "Milepost",
     "url": BASE + "/",
     "description": "Live GPS tracking, a real-time team map and route history for small businesses.",
     "inLanguage": "en-GB",
@@ -292,7 +292,7 @@ SITE = {
 APP_NODE = {
     "@type": "SoftwareApplication",
     "@id": BASE + "/#app",
-    "name": "TrackLink",
+    "name": "Milepost",
     "url": BASE + "/",
     "applicationCategory": "BusinessApplication",
     "applicationSubCategory": "GPS tracking",
@@ -304,7 +304,7 @@ APP_NODE = {
         BASE + "/images/product/hub-route-history.png",
         BASE + "/images/product/track-app.png",
     ],
-    "description": "TrackLink is a lightweight GPS tracking platform for small businesses — couriers, farms, trades, delivery and field services. Track users share live GPS location; Hub users see every device on a live map, review route history and manage their team.",
+    "description": "Milepost is a lightweight GPS tracking platform for small businesses — couriers, farms, trades, delivery and field services. Track users share live GPS location; Hub users see every device on a live map, review route history and manage their team.",
     "featureList": [
         "Live GPS tracking with background location upload",
         "Real-time team map for every device in the organisation",
@@ -494,16 +494,16 @@ ADDONS = """
 """
 
 FAQS = [
-    ("Is TrackLink available yet?",
-     f"Yes. <a href=\"{SIGNUP}\">Create your organisation</a> on the web and start a 14-day free trial &mdash; no card needed &mdash; then invite your team. The people being tracked use the TrackLink Android app; managers use the web dashboard or the app.",
-     "Yes. Create your organisation on the web and start a 14-day free trial — no card needed — then invite your team. The people being tracked use the TrackLink Android app; managers use the web dashboard or the app."),
+    ("Is Milepost available yet?",
+     f"Yes. <a href=\"{SIGNUP}\">Create your organisation</a> on the web and start a 14-day free trial &mdash; no card needed &mdash; then invite your team. The people being tracked use the Milepost Android app; managers use the web dashboard or the app.",
+     "Yes. Create your organisation on the web and start a 14-day free trial — no card needed — then invite your team. The people being tracked use the Milepost Android app; managers use the web dashboard or the app."),
     ("Do I need a tracker box or any hardware?",
-     "No. TrackLink runs on the phone your team member already carries &mdash; there is no box to fit, no installer to book and nothing to move when someone changes vehicle.",
-     "No. TrackLink runs on the phone your team member already carries — there is no box to fit, no installer to book and nothing to move when someone changes vehicle."),
-    ("What does TrackLink cost?",
-     "TrackLink starts at &pound;16/month for 1 Hub seat plus 3 Track seats, with a 14-day free trial. Extra Track and Hub seats come in packs &mdash; see <a href=\"/pricing/\">full pricing</a>.",
-     "TrackLink starts at £16/month for 1 Hub seat plus 3 Track seats, with a 14-day free trial. Extra Track and Hub seats come in packs."),
-    ("How often does TrackLink update a device&rsquo;s location?",
+     "No. Milepost runs on the phone your team member already carries &mdash; there is no box to fit, no installer to book and nothing to move when someone changes vehicle.",
+     "No. Milepost runs on the phone your team member already carries — there is no box to fit, no installer to book and nothing to move when someone changes vehicle."),
+    ("What does Milepost cost?",
+     "Milepost starts at &pound;16/month for 1 Hub seat plus 3 Track seats, with a 14-day free trial. Extra Track and Hub seats come in packs &mdash; see <a href=\"/pricing/\">full pricing</a>.",
+     "Milepost starts at £16/month for 1 Hub seat plus 3 Track seats, with a 14-day free trial. Extra Track and Hub seats come in packs."),
+    ("How often does Milepost update a device&rsquo;s location?",
      "The standard cadences are 30 seconds, 60 seconds or 5 minutes. A 5-second high-frequency mode and a 1-second Live Track mode are also available as explicit opt-ins for near-live tracking, with in-app battery and data guidance so you know the trade-off before you turn them on.",
      "The standard cadences are 30 seconds, 60 seconds or 5 minutes. A 5-second high-frequency mode and a 1-second Live Track mode are also available as explicit opt-ins for near-live tracking, with in-app battery and data guidance."),
     ("Is our team&rsquo;s location data isolated from other companies?",
@@ -513,8 +513,8 @@ FAQS = [
      "Fixes queue on the device and flush automatically once it reconnects &mdash; even after an extended period offline, nothing is lost, it just arrives a little later.",
      "Fixes queue on the device and flush automatically once it reconnects — even after an extended period offline, nothing is lost, it just arrives a little later."),
     ("Can a Track user turn tracking off?",
-     "Yes. Only the person holding a device can switch its tracking on or off &mdash; TrackLink gives no one a remote switch over someone else&rsquo;s phone. Employers are responsible for using tracking lawfully, which in the UK generally means telling staff what is monitored and why.",
-     "Yes. Only the person holding a device can switch its tracking on or off — TrackLink gives no one a remote switch over someone else's phone. Employers are responsible for using tracking lawfully, which in the UK generally means telling staff what is monitored and why."),
+     "Yes. Only the person holding a device can switch its tracking on or off &mdash; Milepost gives no one a remote switch over someone else&rsquo;s phone. Employers are responsible for using tracking lawfully, which in the UK generally means telling staff what is monitored and why.",
+     "Yes. Only the person holding a device can switch its tracking on or off — Milepost gives no one a remote switch over someone else's phone. Employers are responsible for using tracking lawfully, which in the UK generally means telling staff what is monitored and why."),
     ("Who controls billing &mdash; every Hub user?",
      "No. The account owner is the single person who controls the subscription: the payment method, plan changes, buying and removing seats, and cancellation. Other Hub users can use everything day to day &mdash; the live map, route history, groups and members &mdash; but cannot change what your organisation is paying. The owner is not an extra seat; they are one of your Hub users.",
      "No. The account owner is the single person who controls the subscription: the payment method, plan changes, buying and removing seats, and cancellation. Other Hub users can use everything day to day — the live map, route history, groups and members — but cannot change what your organisation is paying. The owner is not an extra seat; they are one of your Hub users."),
@@ -525,8 +525,8 @@ FAQS = [
      "Live location is overwritten on every update. Stored route history is kept for 30 days; older points are deleted automatically once they expire.",
      "Live location is overwritten on every update. Stored route history is kept for 30 days; older points are deleted automatically once they expire."),
     ("How do I pay, and can I cancel?",
-     "Paid plans are billed in advance via Google Play Billing on Android or Stripe on the web, depending on how your organisation subscribes. You can cancel at any time from within TrackLink; access runs to the end of the current billing period.",
-     "Paid plans are billed in advance via Google Play Billing on Android or Stripe on the web, depending on how your organisation subscribes. You can cancel at any time from within TrackLink; access runs to the end of the current billing period."),
+     "Paid plans are billed in advance via Google Play Billing on Android or Stripe on the web, depending on how your organisation subscribes. You can cancel at any time from within Milepost; access runs to the end of the current billing period.",
+     "Paid plans are billed in advance via Google Play Billing on Android or Stripe on the web, depending on how your organisation subscribes. You can cancel at any time from within Milepost; access runs to the end of the current billing period."),
 ]
 
 
@@ -563,14 +563,14 @@ def write(path, html):
 home_faqs = FAQS[:4]
 home = (
     head(
-        "Live GPS Tracking for Small Business Teams | TrackLink",
+        "Live GPS Tracking for Small Business Teams | Milepost",
         "Live GPS tracking, a real-time team map and route history for UK couriers, farms, trades and field teams. From &pound;16/month with a 14-day free trial.".replace("&pound;", "£"),
         "/",
         graph([ORG, SITE,
-               webpage("/", "Live GPS Tracking for Small Business Teams | TrackLink",
+               webpage("/", "Live GPS Tracking for Small Business Teams | Milepost",
                        "Live GPS tracking, a real-time team map and route history for UK couriers, farms, trades and field teams. From £16/month with a 14-day free trial."),
                APP_NODE]),
-        og_title="TrackLink — live GPS tracking for teams",
+        og_title="Milepost — live GPS tracking for teams",
         og_desc="Live location tracking, a real-time team map, route history and simple seat-based pricing — built for couriers, farms, trades and field-service teams.",
     )
     + header("/")
@@ -581,7 +581,7 @@ home = (
         <div class="hero__copy">
           <span class="eyebrow">GPS tracking for teams</span>
           <h1>Live GPS tracking for teams, <span class="accent">without the guesswork</span>.</h1>
-          <p class="hero__lead">TrackLink links every person on your team to a live map your whole business can trust &mdash; built for couriers, farms, trades and delivery teams who need simple, honest location tracking.</p>
+          <p class="hero__lead">Milepost links every person on your team to a live map your whole business can trust &mdash; built for couriers, farms, trades and delivery teams who need simple, honest location tracking.</p>
           <div class="hero__actions">
             <a class="btn btn--primary btn--lg" href="{SIGNUP}">Start free trial</a>
             <a class="btn btn--secondary btn--lg" href="/features/">See what&rsquo;s included</a>
@@ -598,7 +598,7 @@ home = (
     <section class="section" id="features" aria-labelledby="features-h">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">What TrackLink does</p>
+          <p class="eyebrow">What Milepost does</p>
           <h2 id="features-h">Everything a team needs to stay in sync</h2>
           <p>Two simple roles &mdash; Track and Hub &mdash; cover the whole job: Track users report their position, and the business sees exactly where everyone is.</p>
         </div>
@@ -674,15 +674,15 @@ write("index.html", home)
 # ---------- features ----------
 features = (
     head(
-        "GPS Tracking Features: Live Map &amp; Route History | TrackLink",
-        "Every TrackLink feature in detail: background GPS tracking, a real-time team map with under 5-second latency, route history, groups and data isolation.",
+        "GPS Tracking Features: Live Map &amp; Route History | Milepost",
+        "Every Milepost feature in detail: background GPS tracking, a real-time team map with under 5-second latency, route history, groups and data isolation.",
         "/features/",
         graph([ORG, SITE,
-               webpage("/features/", "TrackLink features", "Every TrackLink feature in detail: live GPS tracking, the real-time team map, route history, custom groups, multi-Hub organisations and data isolation.", crumb=True),
+               webpage("/features/", "Milepost features", "Every Milepost feature in detail: live GPS tracking, the real-time team map, route history, custom groups, multi-Hub organisations and data isolation.", crumb=True),
                breadcrumb("/features/", "Features"), APP_NODE]),
     )
     + header("/features/")
-    + page_head("Features", "Everything TrackLink does",
+    + page_head("Features", "Everything Milepost does",
                 "Two roles cover the whole job. Your team reports its position from the phones they already carry; the business sees every one of them on a single live map.")
     + f"""
     <section class="section">
@@ -761,15 +761,15 @@ write("features/index.html", features)
 # ---------- how it works ----------
 how = (
     head(
-        "How TrackLink Works: Track and Hub Explained | TrackLink",
-        "How TrackLink works in three steps: a team member toggles tracking on, the business watches the live team map, and any day&rsquo;s route can be reviewed afterwards.".replace("&rsquo;", "’"),
+        "How Milepost Works: Track and Hub Explained | Milepost",
+        "How Milepost works in three steps: a team member toggles tracking on, the business watches the live team map, and any day&rsquo;s route can be reviewed afterwards.".replace("&rsquo;", "’"),
         "/how-it-works/",
         graph([ORG, SITE,
-               webpage("/how-it-works/", "How TrackLink works", "How TrackLink works in three steps: Track users toggle tracking on, Hub users watch the live map, and route history is reviewable afterwards.", crumb=True),
+               webpage("/how-it-works/", "How Milepost works", "How Milepost works in three steps: Track users toggle tracking on, Hub users watch the live map, and route history is reviewable afterwards.", crumb=True),
                breadcrumb("/how-it-works/", "How it works"), APP_NODE]),
     )
     + header("/how-it-works/")
-    + page_head("How it works", "How TrackLink works",
+    + page_head("How it works", "How Milepost works",
                 "There are only two roles to understand, and one of them takes about ten seconds to explain to the person carrying the phone.")
     + f"""
     <section class="section">
@@ -853,11 +853,11 @@ write("how-it-works/index.html", how)
 # ---------- pricing ----------
 pricing = (
     head(
-        "Pricing: GPS Tracking from &pound;16 a Month | TrackLink".replace("&pound;", "£"),
-        "TrackLink pricing: £16/month for 1 Hub seat and 3 Track seats, with a 14-day free trial. Track and Hub seat packs, plus an optional 365-day history add-on.",
+        "Pricing: GPS Tracking from &pound;16 a Month | Milepost".replace("&pound;", "£"),
+        "Milepost pricing: £16/month for 1 Hub seat and 3 Track seats, with a 14-day free trial. Track and Hub seat packs, plus an optional 365-day history add-on.",
         "/pricing/",
         graph([ORG, SITE,
-               webpage("/pricing/", "TrackLink pricing", "TrackLink pricing: £16/month for 1 Hub seat and 3 Track seats with a 14-day free trial, plus Track and Hub seat packs.", crumb=True),
+               webpage("/pricing/", "Milepost pricing", "Milepost pricing: £16/month for 1 Hub seat and 3 Track seats with a 14-day free trial, plus Track and Hub seat packs.", crumb=True),
                breadcrumb("/pricing/", "Pricing"), APP_NODE]),
     )
     + header("/pricing/")
@@ -926,12 +926,12 @@ write("pricing/index.html", pricing)
 # ---------- faq ----------
 faq_page = (
     head(
-        "TrackLink FAQ: GPS Tracking Questions Answered | TrackLink",
-        "Answers on TrackLink pricing, update intervals, hardware, offline behaviour, data retention, data isolation, billing control and cancellation.",
+        "Milepost FAQ: GPS Tracking Questions Answered | Milepost",
+        "Answers on Milepost pricing, update intervals, hardware, offline behaviour, data retention, data isolation, billing control and cancellation.",
         "/faq/",
         graph([ORG, SITE,
-               dict(webpage("/faq/", "TrackLink frequently asked questions",
-                            "Answers on TrackLink pricing, update intervals, hardware, offline behaviour, data retention, data isolation, billing control and cancellation.",
+               dict(webpage("/faq/", "Milepost frequently asked questions",
+                            "Answers on Milepost pricing, update intervals, hardware, offline behaviour, data retention, data isolation, billing control and cancellation.",
                             crumb=True, types=["WebPage", "FAQPage"]),
                     **{"mainEntity": faq_schema(FAQS)}),
                breadcrumb("/faq/", "FAQ"), APP_NODE]),
@@ -1089,7 +1089,7 @@ def render_guide(g):
         } for q, a in g["faqs"]],
     }
     html = (
-        head(g["title"] + " | TrackLink", _plain(g["desc"]), path,
+        head(g["title"] + " | Milepost", _plain(g["desc"]), path,
              graph([ORG, SITE, page, article, faq_node, guide_crumbs(path, _plain(h1))]))
         + header("/guides/")
         + f"""
@@ -1144,7 +1144,7 @@ def render_guide(g):
     </section>
 """
         + cta("Track your team the transparent way",
-              "TrackLink puts your team on one live map from the phones they already carry. 14-day free trial, no card required.")
+              "Milepost puts your team on one live map from the phones they already carry. 14-day free trial, no card required.")
         + FOOTER
     )
     write(f'guides/{g["slug"]}/index.html', html)
@@ -1166,7 +1166,7 @@ for key, name, intro in HUBS:
         </section>""")
 _guides_desc = "Plain-English guides to GPS tracking for UK businesses: costs, choosing a tracker, UK law and privacy, accuracy, battery life and tracking by industry."
 guides_index = (
-    head("GPS Tracking Guides for UK Businesses | TrackLink", _guides_desc, "/guides/",
+    head("GPS Tracking Guides for UK Businesses | Milepost", _guides_desc, "/guides/",
          graph([ORG, SITE,
                 dict(webpage("/guides/", "GPS tracking guides", _guides_desc, crumb=True,
                              types=["WebPage", "CollectionPage"], about=BASE + "/#organization"),

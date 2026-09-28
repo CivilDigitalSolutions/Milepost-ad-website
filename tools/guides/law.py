@@ -47,7 +47,7 @@ dict(
           journeys is much harder to justify. Allow tracking to be switched off outside working time, or don&rsquo;t
           look at private trips.</li>
         <li><strong>Who can see it.</strong> Limit access to the people who need it, such as dispatchers and managers.</li>
-        <li><strong>How long you keep it.</strong> Set a retention period and stick to it. (TrackLink deletes route
+        <li><strong>How long you keep it.</strong> Set a retention period and stick to it. (Milepost deletes route
           history automatically after 30 days as standard.)</li>
       </ul>
 
@@ -72,7 +72,7 @@ dict(
       <p>This checklist replaces the US-style &ldquo;compliance checklist by state&rdquo;: in the UK the same data
       protection law applies across England, Scotland, Wales and Northern Ireland.</p>
 
-      <h2>How TrackLink is designed to help</h2>
+      <h2>How Milepost is designed to help</h2>
       <ul>
         <li>Only the person holding the phone can switch their tracking on or off &mdash; there is no remote switch.</li>
         <li>A visible notification shows whenever tracking is running, so it is never covert.</li>
@@ -149,7 +149,7 @@ dict(
 
       <h2>What fair workplace tracking looks like</h2>
       <p>A fair set-up is visible and under your control: you know when it is on, you can see that it is running, and
-      it isn&rsquo;t tracking you in your own time. That is how TrackLink works &mdash; only the person holding the phone
+      it isn&rsquo;t tracking you in your own time. That is how Milepost works &mdash; only the person holding the phone
       can switch tracking on or off, and a notification shows whenever it is running. (Employers are still responsible
       for using it lawfully.)</p>
 """,
@@ -206,8 +206,8 @@ dict(
       open about it is both the ethical and the legally safer approach; secret tracking of an adult family member or
       partner can cross into harassment.</p>
 
-      <h2>Where TrackLink fits</h2>
-      <p>TrackLink tracks a <em>phone</em>, not a vehicle, and only while its holder has switched tracking on &mdash;
+      <h2>Where Milepost fits</h2>
+      <p>Milepost tracks a <em>phone</em>, not a vehicle, and only while its holder has switched tracking on &mdash;
       which makes it a natural fit for staff using their own vehicles for work, and unsuited to covert tracking by
       design.</p>
 """,
@@ -265,7 +265,7 @@ dict(
 
       <h2>The legitimate side: transparent tracking</h2>
       <p>Location tracking has plenty of legitimate uses &mdash; families who agree to share, and businesses
-      coordinating their teams. The difference is <strong>knowledge and control</strong>. TrackLink is built on that
+      coordinating their teams. The difference is <strong>knowledge and control</strong>. Milepost is built on that
       principle: tracking only runs when the person holding the phone switches it on, and a notification shows while
       it does.</p>
 """,
@@ -385,7 +385,7 @@ dict(
         <li><strong>No advertising or data resale.</strong></li>
       </ul>
 
-      <h2>What TrackLink collects</h2>
+      <h2>What Milepost collects</h2>
       <p>For each position: latitude, longitude, accuracy, speed, heading, the phone&rsquo;s battery level and the time.
       Route history is deleted automatically after 30 days as standard. There is no advertising or analytics SDK in the
       app, tracking runs only when the phone&rsquo;s holder switches it on, and each organisation&rsquo;s data is isolated
@@ -395,7 +395,7 @@ dict(
         ("Is GPS location data personal data?",
          "Yes, when it relates to an identifiable person — and a work phone or a driver's vehicle almost always does. UK GDPR then applies."),
         ("How long should a business keep GPS tracking data?",
-         "Only as long as needed for the purpose. Many businesses keep route history for 30 to 90 days; TrackLink deletes it after 30 days as standard."),
+         "Only as long as needed for the purpose. Many businesses keep route history for 30 to 90 days; Milepost deletes it after 30 days as standard."),
     ],
     related=["is-gps-tracking-legal-uk-business", "gps-tracking-vs-employee-monitoring", "can-someone-track-your-location"],
 ),
@@ -494,7 +494,7 @@ dict(
       </ul>
 
       <h2>Design choices that build trust</h2>
-      <p>The easiest concerns to resolve are the ones the system itself answers. In TrackLink, only the person holding
+      <p>The easiest concerns to resolve are the ones the system itself answers. In Milepost, only the person holding
       the phone can switch tracking on or off, a notification shows whenever it runs, and history is deleted after 30
       days. That turns &ldquo;trust us&rdquo; into something staff can see for themselves.</p>
 """,

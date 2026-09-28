@@ -1,6 +1,6 @@
 """Guides hub: assets, equipment and theft.
 
-TrackLink tracks PEOPLE (phones), not objects. These guides say so plainly and help the reader
+Milepost tracks PEOPLE (phones), not objects. These guides say so plainly and help the reader
 choose the right kind of tracker — honesty that keeps the rest of the site credible.
 """
 HUB = "assets"
@@ -23,7 +23,7 @@ dict(
         <caption>Tracking people vs tracking things</caption>
         <thead><tr><th>You want to know&hellip;</th><th>Use</th></tr></thead>
         <tbody>
-          <tr><td>Where your team is</td><td>A phone tracking app (like TrackLink)</td></tr>
+          <tr><td>Where your team is</td><td>A phone tracking app (like Milepost)</td></tr>
           <tr><td>Where a trailer, machine or piece of kit is</td><td>A hardware GPS tracker on the asset</td></tr>
           <tr><td>Where a pool vehicle is, whoever drives it</td><td>A fitted vehicle tracker</td></tr>
         </tbody>
@@ -50,10 +50,10 @@ dict(
       you spot equipment sitting idle. See also
       <a href="/guides/gps-construction-equipment-theft/">GPS trackers for construction equipment and theft recovery</a>.</p>
 
-      <h2>Where TrackLink fits</h2>
-      <p>TrackLink tracks the <em>people</em> moving your assets around, through their phones. It doesn&rsquo;t track
+      <h2>Where Milepost fits</h2>
+      <p>Milepost tracks the <em>people</em> moving your assets around, through their phones. It doesn&rsquo;t track
       unattended equipment. If your main need is asset tracking, a dedicated asset tracker is the right tool; if you
-      need both, TrackLink covers the team side.</p>
+      need both, Milepost covers the team side.</p>
 """,
     faqs=[
         ("Can I track a trailer with GPS?",
@@ -104,7 +104,7 @@ dict(
       <p>Tracking plant across several sites cuts time lost looking for machines and shows which ones are underused.
       For tracking the <em>people</em> working across your sites, see
       <a href="/guides/gps-tracking-contractors-job-sites/">GPS tracking for contractors</a> &mdash; that part is what
-      TrackLink does.</p>
+      Milepost does.</p>
 """,
     faqs=[
         ("Do GPS trackers stop plant theft?",
