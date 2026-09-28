@@ -7,7 +7,7 @@ The repository root **is** the website root (no build step). Plain HTML + one
 shared stylesheet, mirroring the structure of the BoatLog and Dispatch
 marketing sites.
 
-This repo (`CivilDigitalSolutions/TrackLink-ad-website`) is deliberately
+This repo (`CivilDigitalSolutions/Milepost-ad-website`) is deliberately
 separate from `CivilDigitalSolutions/TrackLink`, which is the **app** repo
 description on GitHub (the actual Android/Firebase app lives locally at
 `C:\Users\Tom\AndroidStudioProjects\GPS Tracker`, Firebase project
