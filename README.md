@@ -1,4 +1,4 @@
-# TrackLink Marketing Site — tracklink.civildigital.co.uk
+# Milepost Marketing Site — milepost.civildigital.co.uk
 
 Production static marketing site for **TrackLink**, a live GPS tracking
 platform for small businesses (couriers, farms, trades, delivery and other
@@ -26,7 +26,7 @@ description on GitHub (the actual Android/Firebase app lives locally at
 ├── privacy/index.html        # Privacy Policy
 ├── terms/index.html          # Terms & Conditions
 ├── 404.html                  # Not-found page
-├── CNAME                     # Pins tracklink.civildigital.co.uk
+├── CNAME                     # Pins milepost.civildigital.co.uk
 ├── robots.txt / sitemap.xml
 ├── site.webmanifest          # PWA/install metadata (name, icons, theme colour)
 ├── .nojekyll                 # So Pages doesn't run Jekyll processing over the site
@@ -99,7 +99,7 @@ eight files.
 the running product.** They are HTML/SVG renders, built to match the app's own
 design tokens and documented behaviour, then screenshotted headlessly. They
 were produced this way because the build environment could not reach the live
-Hub (`app.tracklink.civildigital.co.uk` and `tracklink-a9030.web.app` are both
+Hub (`app.milepost.civildigital.co.uk` and `tracklink-a9030.web.app` are both
 outside its network policy, and the Hub is a sign-in surface in any case).
 
 What that means in practice:
@@ -165,17 +165,17 @@ no GA4 or equivalent in the repo) and per-audience landing pages
 ## Publish (GitHub Pages, deploy from root)
 
 1. **Settings → Pages → Build and deployment → Deploy from a branch → `main` / `/ (root)`**.
-2. **Settings → Pages → Custom domain:** `tracklink.civildigital.co.uk` — already pinned by the `CNAME` file.
+2. **Settings → Pages → Custom domain:** `milepost.civildigital.co.uk` — already pinned by the `CNAME` file.
 3. **DNS** at your registrar: `tracklink` as `CNAME` → `civildigitalsolutions.github.io` (or your GitHub Pages target — confirm the exact org/user Pages hostname in the repo's Pages settings once enabled).
 4. Enable **Enforce HTTPS** once the certificate provisions.
 
 ## App URL (single swap point)
 
-Every "Start free trial" button points at `https://app.tracklink.civildigital.co.uk`,
+Every "Start free trial" button points at `https://app.milepost.civildigital.co.uk`,
 which the owner has confirmed is **live and serving the web Hub**.
 
 To repoint it, find-and-replace the exact string
-`https://app.tracklink.civildigital.co.uk` across all HTML files — it appears
+`https://app.milepost.civildigital.co.uk` across all HTML files — it appears
 in the nav, hero, pricing card, CTA section and footer of every page.
 
 Do **not** link to a Play Store URL until the owner confirms the Play Console

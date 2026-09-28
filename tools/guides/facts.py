@@ -6,7 +6,7 @@ prices = web (Stripe) prices, the ones a visitor to this site pays when they sig
 (app repo: web/src/pricing.ts). Subscribing inside the Android app via Google Play costs more.
 """
 
-APP = "https://app.tracklink.civildigital.co.uk"
+APP = "https://app.milepost.civildigital.co.uk"
 SIGNUP = APP + "/signup"
 
 # Web (direct) prices, GBP per month. Annual = 10x monthly (two months free).

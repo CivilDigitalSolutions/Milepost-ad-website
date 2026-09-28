@@ -21,8 +21,8 @@ patches are rerunnable and touch the nav and footer links only.
 import json, os, pathlib, re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-BASE = "https://tracklink.civildigital.co.uk"
-APP = "https://app.tracklink.civildigital.co.uk"
+BASE = "https://milepost.civildigital.co.uk"
+APP = "https://app.milepost.civildigital.co.uk"
 # Where "Start free trial" goes (2026-09-19). It used to be APP, which is the Hub SIGN-IN page: a
 # new visitor could not create an organisation there. /signup creates the account + org + trial.
 SIGNUP = APP + "/signup"

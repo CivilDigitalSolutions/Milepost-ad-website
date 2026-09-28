@@ -4,4 +4,4 @@ Allow: /
 # No crawl traps on this site; everything under / is intended for indexing.
 # 404.html is served only as the not-found response and carries a noindex tag.
 
-Sitemap: https://tracklink.civildigital.co.uk/sitemap.xml
+Sitemap: https://milepost.civildigital.co.uk/sitemap.xml
