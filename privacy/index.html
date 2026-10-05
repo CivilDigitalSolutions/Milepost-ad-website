@@ -160,6 +160,9 @@
             <li><strong>Zone (geofence) data</strong> — the places your organisation marks on the map, and a record of when each device entered or left one. Zones are created and seen only by Hub users; Track users cannot view the list of places their organisation has marked.</li>
             <li><strong>Messages and files</strong> — messages, photos, videos and documents sent between members of your organisation in Milepost, and a record of who downloaded a file and when, which your organisation's Hub users can see.</li>
             <li><strong>Notes</strong> — notes you write in Milepost. Only you can see your notes; not your organisation's Hub users, and not us in the normal running of the service.</li>
+            <li><strong>Daily summaries</strong> — each night we add up each person's previous day of tracking for their organisation's reports: how long tracking was on, how far they travelled, when their first and last positions were, and how long they spent in each zone. No speeds are included. The person can see their own summary in the app.</li>
+            <li><strong>Lone-worker data</strong> — only for organisations that use lone-worker awareness, and only for the people they enrol: check-in sessions (start time, check-in time and an optional note), alerts (when and how each was raised, location during the alert, who was alerted, when it reached their phone, who responded and how it ended), any voice recordings made during an alert, optional medical notes and a record of who has read them, and whether each person's phone is set up to send and receive alerts. PINs are never stored, only a one-way scrambled form of them that cannot be turned back into the PIN.</li>
+            <li><strong>Billing contact details</strong> for organisations that pay by invoice — the name, address, email and purchase-order number to put on the invoice.</li>
           </ul>
 
           <h2>How we use your information</h2>
@@ -169,12 +172,37 @@
             <li>To keep the service secure and to prevent misuse, including keeping each organisation's data isolated from every other organisation's, and keeping each account signed in on one phone at a time.</li>
             <li>To process subscription payments via Google Play Billing or Stripe, and to contact you about your account.</li>
             <li>To notify Hub users when a device arrives at or leaves a place the organisation has marked (a "zone"), where the organisation has set zones up.</li>
+            <li>To produce your organisation's usage reports from the daily summaries.</li>
+            <li>To run lone-worker awareness for organisations that use it: to record check-in sessions, and to send alerts to the people the organisation has chosen as contacts.</li>
           </ul>
 
           <h2>Zones and workplace monitoring</h2>
           <p>An organisation can mark places on the map — a depot, a yard, a customer address — and be notified when a tracked device arrives at or leaves one. We call these <strong>zones</strong>.</p>
           <p>If you are a Track user, you should know that this happens: while your tracking is switched on, your organisation may be notified of your arrivals at and departures from the places they have marked. The Milepost app tells you this on the tracking screen. Only the person tracking a device can switch that tracking on or off — Milepost gives no one a remote switch over someone else&rsquo;s device.</p>
           <p>Zone monitoring is a feature we provide to employers, and employers are responsible for using it lawfully — which in the UK generally means telling staff what is monitored and why. If you are an employee with questions about how your employer uses it, please ask them first; they control the settings, not us.</p>
+
+          <h2>Lone-worker awareness</h2>
+          <p>Some organisations use Milepost's lone-worker awareness. It gives an organisation better awareness of staff who work alone: a person starts a timed check-in session, and if they raise an alert or do not check in, their own colleagues are told. It is self-monitored by your organisation, not a monitored alarm service. In an emergency, call 999. If your organisation uses it, here is what happens.</p>
+          <h3>If you are enrolled as a lone worker</h3>
+          <ul>
+            <li>Only the organisation's owner can enrol you, and only if you already have a Track seat.</li>
+            <li>During a session your location is sent regularly. During an alert it is sent every 5 seconds until the alert is closed. You can always stop tracking yourself; nobody else can.</li>
+            <li>A note you add to a session is seen only by you, unless an alert is raised during that session. Then the people dealing with the alert can see it.</li>
+            <li>When an alert is raised, your organisation's chosen contacts, and the Hub users on cover, see your name, your location during the alert, your note, and what happens next.</li>
+            <li>You choose a cancel PIN and a duress PIN. If you are made to cancel an alert, the duress PIN makes your phone look as if the alert was cancelled while your contacts are still told. For this reason your phone does not show whether an alert really stopped.</li>
+            <li>Medical notes are optional. If you add them, your organisation's owner, its Hub users and your team manager can read them at any time, so they can take them into account when planning your work, and the people dealing with an alert can read them during it. Every time someone reads them is recorded, and the app shows you who and when (a reading during an alert is shown once the alert is closed). Your notes are deleted when you delete them or stop being a lone worker.</li>
+            <li>When you raise an SOS, your phone records 30 seconds of sound, and you can record short voice notes while an alert is open. The app always shows when it is recording; it never records secretly, and never outside an alert.</li>
+            <li>If your organisation switches on person-down detection, your phone uses its own movement sensors during a session to notice a fall or a long time without moving, and asks &ldquo;Are you OK?&rdquo; for 60 seconds before alerting anyone. The sensor readings stay on your phone; a short note of each countdown (when, and whether you answered) is kept for 7 days.</li>
+          </ul>
+          <h3>If you are a contact or a Hub user on cover</h3>
+          <ul>
+            <li>Your phone reports whether it can receive alerts: whether notifications and full-screen alerts are allowed, and which Do Not Disturb mode it is in. This is how the app tells you and your organisation whether alerts can reach you. It is not used for anything else.</li>
+            <li>When an alert is sent to you, we record when it reached your phone and what you did. The notification itself carries no name or details; your phone fetches them securely when it arrives.</li>
+          </ul>
+          <h3>Who decides</h3>
+          <p>Your organisation decides whether to use lone-worker awareness, who is enrolled, and who the contacts are. They are responsible for using it lawfully and for telling you about it. Nobody at Civil Digital watches for or answers alerts.</p>
+          <h3>Your rights</h3>
+          <p>You can ask your organisation for a copy of any alert record about you; they can download it from Milepost. You can also contact us using the details below.</p>
 
           <h2>Where your data is processed</h2>
           <p>Milepost's database and backend run on Google Firebase/Google Cloud infrastructure. Authentication (sign-in) runs on Google's global infrastructure and is not region-pinned.</p>
@@ -192,6 +220,8 @@
             <li><strong>Photos, videos and documents sent in messages</strong> are deleted with their message. They are not kept in any backup, so once deleted they cannot be recovered by anyone, including Civil Digital.</li>
             <li><strong>The download record</strong> (who downloaded a file from a message, and when) is kept for 12 months.</li>
             <li><strong>Notes</strong> are kept until you delete them or your account is deleted.</li>
+            <li><strong>Daily usage summaries</strong> are kept for 12 months, then deleted. They hold no route, only the totals described above.</li>
+            <li><strong>Lone-worker records</strong> (organisations that use lone-worker awareness): alert records, with any voice recordings, are kept for 12 months; sessions without an alert for 30 days; the record of who read someone's medical notes for 12 months.</li>
             <li><strong>Unused invitations</strong> expire after 48 hours, or 7 days if they were sent by email.</li>
             <li><strong>The app installation identifier</strong> is replaced when you sign in on another phone, and deleted with your account.</li>
             <li><strong>Account and organisation data</strong> is kept for as long as your organisation remains active, or as required by law. When you delete your account, or an owner deletes the organisation, we delete the related data straight away.</li>
