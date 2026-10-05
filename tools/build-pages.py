@@ -23,6 +23,8 @@ import json, os, pathlib, re
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 BASE = "https://milepost.civildigital.co.uk"
 APP = "https://app.milepost.civildigital.co.uk"
+# Training films (app spec §20): members only, so the link goes to the dashboard's sign-in.
+TRAINING = APP + "/training"
 # Where "Start free trial" goes (2026-09-19). It used to be APP, which is the Hub SIGN-IN page: a
 # new visitor could not create an organisation there. /signup creates the account + org + trial.
 SIGNUP = APP + "/signup"
@@ -144,6 +146,7 @@ FOOTER = f"""
             <li><a href="/pricing/">Pricing</a></li>
             <li><a href="/faq/">FAQ</a></li>
             <li><a href="/guides/">Guides</a></li>
+            <li><a href="{TRAINING}">Training videos (sign in)</a></li>
             <li><a href="{SIGNUP}">Start free trial</a></li>
           </ul>
         </nav>
@@ -1245,6 +1248,7 @@ DELETE_LINK = '            <li><a href="/delete-account/">Delete your account</a
 TERMS_LINK = '            <li><a href="/terms/">Terms</a></li>\n'
 FAQ_LINK = '            <li><a href="/faq/">FAQ</a></li>\n'
 GUIDES_LINK = '            <li><a href="/guides/">Guides</a></li>\n'
+TRAINING_LINK = f'            <li><a href="{TRAINING}">Training videos (sign in)</a></li>\n'
 
 for f in ["privacy/index.html", "terms/index.html", "delete-account/index.html", "404.html"]:
     p = ROOT / f
@@ -1260,6 +1264,8 @@ for f in ["privacy/index.html", "terms/index.html", "delete-account/index.html",
         s = s.replace(TERMS_LINK, TERMS_LINK + DELETE_LINK, 1)
     if GUIDES_LINK not in s and FAQ_LINK in s:
         s = s.replace(FAQ_LINK, FAQ_LINK + GUIDES_LINK, 1)
+    if TRAINING_LINK not in s and GUIDES_LINK in s:
+        s = s.replace(GUIDES_LINK, GUIDES_LINK + TRAINING_LINK, 1)
     s = s.replace(f'href="{APP}">Start free trial', f'href="{SIGNUP}">Start free trial')
 
     assert '<ul class="nav__links" id="primary-nav">' in s, f + ": lost the <ul>"
