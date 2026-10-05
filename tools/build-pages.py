@@ -1206,7 +1206,7 @@ _sitemap_pages = [
     ("/", GUIDES_UPDATED), ("/features/", GUIDES_UPDATED), ("/how-it-works/", GUIDES_UPDATED),
     ("/pricing/", GUIDES_UPDATED), ("/faq/", GUIDES_UPDATED), ("/guides/", GUIDES_UPDATED),
 ] + [(f'/guides/{g["slug"]}/', GUIDES_UPDATED) for g in GUIDES] + [
-    ("/privacy/", "2026-10-02"), ("/terms/", "2026-09-05"), ("/delete-account/", "2026-09-17"),
+    ("/privacy/", "2026-10-05"), ("/terms/", "2026-09-05"), ("/delete-account/", "2026-09-17"),
 ]
 write("sitemap.xml",
       '<?xml version="1.0" encoding="UTF-8"?>\n'
