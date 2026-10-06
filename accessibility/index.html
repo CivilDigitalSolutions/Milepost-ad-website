@@ -176,12 +176,11 @@
                 <li>a zone&rsquo;s centre can be typed or pasted as latitude and longitude, or taken from a person&rsquo;s current position, instead of clicking the map.</li>
               </ul>
             </li>
-            <li><strong>PDF files in Messages</strong> are shown as page images, so a screen reader can&rsquo;t read their text inside Milepost. Use <strong>Download</strong> in the viewer: the file opens in your own PDF app, which can read it aloud. On the web dashboard this is fixed in our October 2026 release, which puts the real text over each page.</li>
+            <li><strong>PDF files in Messages</strong> are shown as page images, so a screen reader can&rsquo;t read their text inside Milepost. Use <strong>Download</strong> in the viewer: the file opens in your own PDF app, which can read it aloud. This applies to the Android app only: since 6 October 2026 the web dashboard puts the real text over each page.</li>
             <li><strong>Scanned PDFs</strong> contain pictures of text rather than text. Download the file to use a tool that can recognise it.</li>
             <li><strong>Videos in Messages</strong> are uploaded by your colleagues, and Milepost cannot add captions to them.</li>
             <li><strong>Photos in Messages</strong> have the file name as their only text alternative, because they are shared by users rather than written by us.</li>
             <li><strong>Map pins</strong> on Android show a person&rsquo;s status and age as a picture. The same facts are in the pin&rsquo;s description and in the Devices list.</li>
-            <li><strong>Some names are shortened</strong> with &ldquo;&hellip;&rdquo; on narrow screens (the live-map device list and the chat list on the web). Our October 2026 release lets them wrap onto a second line instead.</li>
           </ul>
 
           <h2>Feedback and contact information</h2>
@@ -208,8 +207,7 @@
           <h4>Non-compliance with the accessibility regulations</h4>
           <ol>
             <li><strong>Maps</strong> (all three) can&rsquo;t be operated or read in full with a screen reader or keyboard alone. This fails WCAG 1.1.1 (non-text content) and 2.1.1 (keyboard) for the map canvas itself. Equivalent routes exist, as described above. We are looking at a text list of positions under the route history map, and at giving map pins keyboard focus on the web.</li>
-            <li><strong>PDF pages in Messages</strong> are drawn as images with no text layer, so their text is not available to screen readers inside Milepost. This fails WCAG 1.1.1 and 1.3.1 for the in-app viewer. The viewer&rsquo;s Download button saves the file, where it opens in the user&rsquo;s own PDF app; downloads are recorded for the organisation&rsquo;s Hubs, as for every file. The web dashboard&rsquo;s viewer gains a text layer in our October 2026 release.</li>
-            <li><strong>Shortened names</strong> in the web dashboard&rsquo;s live-map device list and chat list hide the full name at 320 pixels wide and 400% zoom (WCAG 1.4.10). Fixed in our October 2026 release.</li>
+            <li><strong>PDF pages in Messages</strong> are drawn as images with no text layer, so their text is not available to screen readers inside Milepost. This fails WCAG 1.1.1 and 1.3.1 for the in-app viewer. The viewer&rsquo;s Download button saves the file, where it opens in the user&rsquo;s own PDF app; downloads are recorded for the organisation&rsquo;s Hubs, as for every file. This applies to the Android app only: the web dashboard&rsquo;s viewer has had a text layer since 6 October 2026.</li>
           </ol>
           <p>We will review this list by <strong>31 March 2027</strong>, or sooner if any of it is fixed.</p>
 
@@ -228,7 +226,7 @@
             <li><strong>Touch and pointer:</strong> no control smaller than 24 &times; 24 pixels on the web; Android controls use the standard 48dp touch size, including the group colour picker, which used to be 14dp; Reply is a visible button on touch screens, not only a swipe.</li>
             <li><strong>Android:</strong> headings on every screen; switches and checkboxes named by their labels; status shown in words as well as colour; confirmation before clearing alerts; PDF zoom buttons; TalkBack actions for Reply and Delete on messages; positions shown as text as well as on the map.</li>
           </ul>
-          <p>Our October 2026 release adds a text layer to PDFs on the web dashboard, so a screen reader can read their text and you can select and copy it; lets names wrap instead of being shortened; and links to this statement from every page of the dashboard.</p>
+          <p>Since 6 October 2026 the web dashboard adds a text layer to PDFs, so a screen reader can read their text and you can select and copy it; lets names wrap instead of being shortened; and links to this statement from every page of the dashboard.</p>
           <p>We test every release with automated checks (axe-core). We have not yet booked an independent audit; we will name the auditor and the date here once we have.</p>
 
           <h3>What we still need to test</h3>
