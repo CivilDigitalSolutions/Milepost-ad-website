@@ -159,6 +159,7 @@ FOOTER = f"""
             <li><a href="/privacy/">Privacy Policy</a></li>
             <li><a href="/terms/">Terms</a></li>
             <li><a href="/delete-account/">Delete your account</a></li>
+            <li><a href="/accessibility/">Accessibility</a></li>
           </ul>
         </div>
       </div>
@@ -1210,6 +1211,7 @@ _sitemap_pages = [
     ("/pricing/", GUIDES_UPDATED), ("/faq/", GUIDES_UPDATED), ("/guides/", GUIDES_UPDATED),
 ] + [(f'/guides/{g["slug"]}/', GUIDES_UPDATED) for g in GUIDES] + [
     ("/privacy/", "2026-10-05"), ("/terms/", "2026-09-05"), ("/delete-account/", "2026-09-17"),
+    ("/accessibility/", "2026-10-06"),
 ]
 write("sitemap.xml",
       '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -1248,9 +1250,10 @@ DELETE_LINK = '            <li><a href="/delete-account/">Delete your account</a
 TERMS_LINK = '            <li><a href="/terms/">Terms</a></li>\n'
 FAQ_LINK = '            <li><a href="/faq/">FAQ</a></li>\n'
 GUIDES_LINK = '            <li><a href="/guides/">Guides</a></li>\n'
+A11Y_LINK = '            <li><a href="/accessibility/">Accessibility</a></li>\n'
 TRAINING_LINK = f'            <li><a href="{TRAINING}">Training videos (sign in)</a></li>\n'
 
-for f in ["privacy/index.html", "terms/index.html", "delete-account/index.html", "404.html"]:
+for f in ["privacy/index.html", "terms/index.html", "delete-account/index.html", "accessibility/index.html", "404.html"]:
     p = ROOT / f
     s = p.read_text(encoding="utf-8")
 
@@ -1264,6 +1267,8 @@ for f in ["privacy/index.html", "terms/index.html", "delete-account/index.html",
         s = s.replace(TERMS_LINK, TERMS_LINK + DELETE_LINK, 1)
     if GUIDES_LINK not in s and FAQ_LINK in s:
         s = s.replace(FAQ_LINK, FAQ_LINK + GUIDES_LINK, 1)
+    if A11Y_LINK not in s and DELETE_LINK in s:
+        s = s.replace(DELETE_LINK, DELETE_LINK + A11Y_LINK, 1)
     if TRAINING_LINK not in s and GUIDES_LINK in s:
         s = s.replace(GUIDES_LINK, GUIDES_LINK + TRAINING_LINK, 1)
     s = s.replace(f'href="{APP}">Start free trial', f'href="{SIGNUP}">Start free trial')
